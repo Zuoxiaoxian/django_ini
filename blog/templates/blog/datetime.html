@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+    {% if now %}
+        <p>当前时间是： {{ now }}</p>
+    {% else %}
+        <p>当前时间无法得到！</p>
+    {% endif %}
+
+    <p>当前协议： {{ request.scheme }}</p>
+    <p>BASE_DIR: {{ base_dir }}</p>
+{% endblock %}
+
+{% block footer %}
+    {{ block.super }}
+    <p>版权所有</p>
+{% endblock %}

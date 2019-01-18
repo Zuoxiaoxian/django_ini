@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block title %}
+            The Great Django Blog
+        {% endblock %}
+    </title>
+</head>
+<body>
+    
+    {% block nav %}
+        这是nav
+    {% endblock %}
+ 
+    {% block content %}
+        这是content
+    {% endblock %}
+ 
+    <hr>
+ 
+    {% block footer %}
+        这是footer
+    {% endblock %}
+ 
+</body>
+</html>
